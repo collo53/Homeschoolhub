@@ -1,7 +1,7 @@
 import { FaHome ,FaSchool} from "react-icons/fa";
 function Cards(){
     return(
-        <div className="flex  justify-between items-center w full">
+        <div className="flex  justify-around  w-full md:flex md:flex-row  items-center md:items-center">
 
             <div className="flex flex-col justify-content-center items-center p-5 bg-[#ffc01d] text-white w-100 border border-transparent rounded-lg shadow-lg  text-center">
                 <FaSchool className="text2xl "/>

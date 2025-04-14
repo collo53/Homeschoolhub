@@ -2,6 +2,7 @@ import React from 'react';
 import Sidebar from '../components/sidebar'; 
 import Cards from '../components/cards'; 
 import '../home.css';
+import Footer from '../components/Footer';
 
 function Home() {
   return (
@@ -35,13 +36,21 @@ function Home() {
                 <li> <span className="text-[#ffc01d] mr-2">✓</span>Separated they live</li>
                 <li><span className="text-[#ffc01d] mr-2">✓</span>Separated they live</li>
               </ul>
+              <div className='flex gap-8 mt-5'>
+            <button className='bg-[#ffc01d] hover:bg-black'> Admission</button>
+            <button className=' text-[#ffc01d] hover:bg-[#ffc01d] hover:text-white '>Learn More</button>
+          </div>
             </div>
           <div className=''>
-            <img src="first.jpg" alt="" className='w-150 h-100 object-center object-fit-cover'/>
+            <img src="https://images.unsplash.com/photo-1727553957823-a54c8ff6a3ff?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" className='w-150 h-100 object-center object-fit-cover'/>
           </div>
+          
         </div>
+        <div>
+       <Footer/>
+       </div>
       </div>
-     
+      
     </div>
   );
 }
