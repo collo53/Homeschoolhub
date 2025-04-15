@@ -2,15 +2,15 @@ import React, { useState } from 'react';
 import { FaHome, FaInfoCircle, FaBars, FaTimes } from 'react-icons/fa'; // Import icons
 
 function Sidebar() {
-  const [isOpen, setIsOpen] = useState(false); // State to toggle menu visibility
+  const [isOpen, setIsOpen] = useState(false); 
 
   const toggleMenu = () => {
-    setIsOpen(!isOpen); // Toggle the menu state
+    setIsOpen(!isOpen); 
   };
 
   return (
-    <div className="w-screen bg-[url('https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?q=80&w=1138&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-center bg-cover text-white p-4 h-auto bg-fixed">
-      {/* Header with toggle button */}
+    <div className="w-full max-w-full  bg-[url('https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?q=80&w=1138&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]  bg-cover bg-no-repeat bg-center  text-white p-4 h-200   bg-fixed">
+      
       <div className="flex justify-between items-center">
         <h2 className="text-[#ffc01d] font-bold font-sans text-3xl">
           HOMESCHOOL HUB
@@ -23,7 +23,7 @@ function Sidebar() {
         </button>
       </div>
 
-      {/* Links Section */}
+      
       <div
         className={`${
           isOpen ? 'block' : 'hidden'
@@ -39,7 +39,7 @@ function Sidebar() {
         </a>
       </div>
 
-      {/* Navigation Links */}
+      
       <div
         className={`${
           isOpen ? 'block' : 'hidden'
@@ -69,7 +69,7 @@ function Sidebar() {
         </ul>
       </div>
 
-      {/* Footer Section */}
+   
       <div className="flex flex-col justify-center items-center text-center mt-12 w-full max-w-2xl mx-auto">
         <h1 className="text-2xl mb-4">Learning Center for Your Kids</h1>
         <p className="text-sm leading-7">
