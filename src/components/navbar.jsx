@@ -8,7 +8,7 @@ function Navbar() {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <div className="w-full bg-black flex flex-col sm:flex-row justify-around text-white px-6 py-4 fixed">
+    <div className="w-full bg-black flex flex-col sm:flex-row justify-around text-white px-6 py-4 fixed z-50">
 
     
       <div className="flex justify-between items-center">
@@ -34,10 +34,11 @@ function Navbar() {
             <Link to="/pages/about" className="hover:text-[#ffc01d]">About</Link>
           </li>
           <li>
-            <a href="#" className="hover:text-[#ffc01d]">Services</a>
+          <Link to="/pages/services" className="hover:text-[#ffc01d]">Services</Link>
+
           </li>
           <li>
-            <a href="#" className="hover:text-[#ffc01d]">Contact</a>
+          <Link to="/pages/contact" className="hover:text-[#ffc01d]">Contact</Link>
           </li>
         </ul>
         </div>
