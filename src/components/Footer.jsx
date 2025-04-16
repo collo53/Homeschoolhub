@@ -4,8 +4,8 @@ import { FaHome } from "react-icons/fa";
 function Footer() {
     return(
 
-        <div className="flex flex-col sm:flex-row justify-evenly items-start gap-8 sm:gap-0 px-6 py-10 bg-black text-white">
-        {/* Contact Info Section */}
+        <div className="flex flex-col sm:flex-row justify-around items-start gap-8 sm:gap-0 px-6 py-10 bg-black text-white">
+        
         <div className="w-full sm:w-1/2">
           <h2 className="text-2xl sm:text-3xl font-bold mb-4">Have a Question</h2>
           <ul className="space-y-3">
@@ -24,7 +24,7 @@ function Footer() {
           </ul>
         </div>
       
-        {/* Links Section */}
+        
         <div className="w-full sm:w-1/2">
           <h2 className="text-2xl sm:text-3xl font-bold mb-4">Links</h2>
           <ul className="space-y-2">

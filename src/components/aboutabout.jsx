@@ -1,25 +1,10 @@
-import React from 'react';
-import Sidebar from '../components/sidebar'; 
-import Cards from '../components/cards'; 
-import '../home.css';
-import Footer from '../components/Footer';
+import React from "react";
 
-function Home() {
-  return (
-    <div className="" >
-      <Sidebar/>
-      <div className="flexitems-center justify-center h-screen mt-4">
-      
-        <div className='m-7 w-full max-w-screen '>
-        <Cards/>
-        </div>
-        <div className='text-blue-600 text-center mt-20 w-full max-2xl mx-auto'>
-          <h2 className='font-bold text-[#ffc01d]'>What we Offer</h2>
-          <p className='text-sm leading-7 w-100 mx-auto text-black'>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-        </div>
-        <div className="flex flex-col-reverse md:flex-row justify-center items-center mt-8 gap-12 w-full bg-neutral-200 px-6 py-10 md:px-20 md:py-20 leading-9">
-  {/* Text Section */}
-  <div className="flex flex-col w-full md:w-1/2">
+function Aboutabout(){
+    return(
+        <div className="flex flex-col-reverse md:flex-row justify-center items-center  gap-12 w-full bg-neutral-200 px-6 py-10 md:px-20 md:py-20 leading-9">
+
+             <div className="flex flex-col w-full md:w-1/2">
     <h1 className="text-[#ffc01d] text-3xl font-bold mb-4">About Us</h1>
     <p className="text-black text-base mb-4">
       Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
@@ -51,14 +36,7 @@ function Home() {
     />
   </div>
 </div>
-
-        <div>
-       <Footer/>
-       </div>
-      </div>
       
-    </div>
-  );
+    );
 }
-
-export default Home;
+export default Aboutabout;

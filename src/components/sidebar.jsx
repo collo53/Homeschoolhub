@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaHome, FaInfoCircle, FaBars, FaTimes } from 'react-icons/fa'; // Import icons
+import { Link } from 'react-router-dom';
 
 function Sidebar() {
   const [isOpen, setIsOpen] = useState(false); 
@@ -52,9 +53,11 @@ function Sidebar() {
             </a>
           </li>
           <li className="flex items-center text-white">
-            <a href="#" className="hover:text-[#ffc01d] pr-4">
+          <Link to="/pages/about">
+            <p className="hover:text-[#ffc01d] pr-4">
               About
-            </a>
+            </p>
+            </Link>
           </li>
           <li className="flex items-center text-white">
             <a href="#" className="hover:text-[#ffc01d] pr-4">
@@ -82,3 +85,4 @@ function Sidebar() {
 }
 
 export default Sidebar;
+
