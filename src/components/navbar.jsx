@@ -51,7 +51,7 @@ function Navbar() {
               <ul className="absolute sm:left-0 sm:mt-2 w-40 bg-black shadow-lg rounded-md z-10 border-0">
                 <li>
                   <Link
-                    to="/pages/portals/student"
+                    to="/pages/studentmain"
                     className="block px-4 py-2 text-white hover:text-[#ffc01d]"
                     onClick={() => setShowDropdown(false)} 
                   >
@@ -69,7 +69,7 @@ function Navbar() {
                 </li>
                 <li>
                   <Link
-                    to="/pages"
+                    to="/pages/teachermain"
                     className="block px-4 py-2 text-white hover:text-[#ffc01d]"
                     onClick={() => setShowDropdown(false)}
                   >
