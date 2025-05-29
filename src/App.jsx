@@ -23,6 +23,15 @@ import TeacherCalendar from './pages/teachercalendar';
 import TeacherMessages from './pages/teachermessages';
 import TeacherMeetings from './pages/teachermeetings';
 import TeacherAccount from './pages/teacheraccount';
+import StudentMain from './pages/studentmain';
+import StudentClass from './pages/studentclass';
+import StudentLesson from './pages/studentlesson';
+import StudentCalendar from './pages/studentcalendar';
+import StudentGrades from './pages/studentgrades';
+import StudentMeetings from './pages/studentmeetings';
+import StudentMessages from './pages/studentmessages';
+import StudentAccount from './pages/studentaccount';
+
 
 
 
@@ -52,7 +61,14 @@ function App() {
         <Route path="/pages/teachermessages" element={<TeacherMessages/>} />
         <Route path="/pages/teachermeetings" element={<TeacherMeetings/>} />
         <Route path="/pages/teacheraccount" element={<TeacherAccount/>} />
-        
+        <Route path="/pages/studentmain" element={<StudentMain/>} />
+        <Route path="/pages/studentclass" element={<StudentClass/>} />
+        <Route path="/pages/studentlesson" element={<StudentLesson/>} />
+        <Route path="/pages/studentcalendar" element={<StudentCalendar/>} />
+        <Route path="/pages/studentgrades" element={<StudentGrades/>} />
+        <Route path="/pages/studentmeetings" element={<StudentMeetings/>} />
+        <Route path="/pages/studentmessages" element={<StudentMessages/>} />
+        <Route path="/pages/studentaccount" element={<StudentAccount/>} />
 
       </Routes>
     </Router>

@@ -51,7 +51,7 @@ const todayEvents = [
   { title: "Budget Review", time: "2:00 PM", status: "upcoming" },
 ];
 
-export default function TeacherCalendarHero() {
+export default function StudentCalendarHero() {
   return (
     <div className="p-6 space-y-6">
       <div className="flex items-center justify-between">
@@ -111,7 +111,7 @@ export default function TeacherCalendarHero() {
           </div>
         </div>
 
-       
+        {/* Today's Schedule */}
         <div>
           <div className="bg-white rounded-lg shadow">
             <div className="p-5 border-b border-gray-200 flex items-center gap-2">

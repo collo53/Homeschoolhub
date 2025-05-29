@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import StudentSidebar from "../components/studentsidebar";
 import Toggle from "../components/toggle";
-import StudentsDashboard from "../components/studentdashboard";
+import StudentCalendarHero from "../components/studentcalendarhero";
 
 
 
-export default function StudentMain() {
+export default function StudentCalendar() {
     const [sidebarOpen, setSidebarOpen] = useState(true);
 
   const toggleSidebar = () => {
@@ -30,7 +30,7 @@ export default function StudentMain() {
      
       <div className={`flex-1 transition-all duration-300 ${sidebarOpen ? "pl-72" : "pl-0"}`}>
         <div className="pt-12 px-6">
-            <StudentsDashboard />
+            <StudentCalendarHero />
         </div>
       </div>
     </div>
